@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="header">
+        <h1 id="title">Desired Cat Survey</h1>
+        <p id="description">Thank you for taking part in our journey to find the most desirable cat!</p>
+    </section>
+    <section class="survey">
+        <form class="survey-form">
+            <label id="name-label">Name <input id="name" type="text" required placeholder="Enter your name"></label>
+            <label id="email-label">Email  <input id="email" type="email" required placeholder="Enter your email"></label>
+            <label id="number-label">Age (optional)  <input id="number" type="number" min="13" max="120" placeholder="Enter your age"></label>
+            <label id="dropdown-label"><h1>What type of cat do you like best? </h1></label>
+            <select id="dropdown">
+                <option>Select...</option>
+                <option>Tabby</option>
+                <option>Calico</option>
+                <option>Solid Colour</option>
+                <option>Colourpoint</option>
+            </select>
+            <label class="cat-count-label"><h1>How many cats do you have? </h1>
+            <label><input class="inline" name="cat-count" type="radio" value="0">0 </label>
+            <label><input class="inline" name="cat-count" type="radio" value="1">1 </label>
+            <label><input class="inline" name="cat-count" type="radio" value="2-3">2-3 </label>
+            <label><input class="inline" name="cat-count" type="radio" value="4+">4+ </label>
+            <label class="cat-energy-label"><h1>How do your cats behave? </h1></label>
+            <label><input class="inline" name="cat-energy" type="checkbox" value="Lazy"> Lazy </label>
+            <label><input class="inline" name="cat-energy" type="checkbox" value="Energetic"> Energetic </label>
+            <label><input class="inline" name="cat-energy" type="checkbox" value="Loving"> Loving </label>
+            <label><input class="inline" name="cat-energy" type="checkbox" value="Curious"> Curious </label>
+            <label><input class="inline" name="cat-energy" type="checkbox" value="Mischevious"> Mischevious </label>
+            <label class="cat-fact-label"><h1>Tell us your favourite fact about your cat! </h1></label>
+            <textarea></textarea>
+            <input id="submit" type="submit" value="Submit!">
+        </form>
+    </section>
+</body>
+</html>
